@@ -1,8 +1,12 @@
+import LoginPage from './LoginPage';
+
 import '../css/Main.css';
 
 const Main = () => {
    return (
-      <div className="Main"></div>
+      <div className="Main">
+         <LoginPage />
+      </div>
    );
 };
 

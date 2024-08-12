@@ -1,0 +1,19 @@
+/*
+ * KeypadButton.css
+ * KeypadButton Component Styles
+ */
+
+.KeypadButton {
+   width  : 2.5em;
+   height : 2.5em;
+   cursor : pointer;
+
+   align-content : center;
+
+   border : 2px solid #888;
+
+   background-color : rgb(211,211,211);
+}
+   .KeypadButton:hover {
+      background-color : #eee;
+   }

@@ -1,0 +1,24 @@
+/*
+ * KeypadInput.css
+ * KeypadInput Component Styles
+ */
+
+.KeypadInput {
+   width  : 8.5em;
+   height : 2.5em;
+
+   border : 2px solid #888;
+   
+   background-color : rgb(211,211,211);
+}
+   .KeypadInput input[type=text] {
+      width  : 100%;
+      height : 100%;
+      border : none;
+
+      font-size : inherit;
+
+      padding : 0.5em;
+
+      background-color : inherit;
+   }

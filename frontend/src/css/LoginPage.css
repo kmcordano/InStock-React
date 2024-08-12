@@ -1,0 +1,23 @@
+/*
+ * LoginPage.css
+ * LoginPage Component Styling
+ */
+
+.LoginPage {
+   width  : 100%;
+   height : 100%;
+
+   display         : flex;
+   align-items     : center;
+   justify-content : space-evenly;
+}
+   
+.LoginPage-welcome, .LoginPage-keypad, .LoginPage-instructions {
+   width      : 30%;
+   font-size  : 2em;
+   text-align : center;
+}
+
+.LoginPage-welcome, .LoginPage-instructions {
+   font-weight : 600;
+}
