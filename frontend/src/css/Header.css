@@ -1,0 +1,41 @@
+/* 
+ * Header.css
+ * Header component styles
+ */
+
+.Header, .Header-logo, .Header-actions {
+   position : absolute;
+}
+
+.Header{
+   top   : 0px;
+   left  : 0px;
+   right : 0px;
+
+   display : flex;
+
+   height : 8em;
+
+   background-color : rgb(150,55,55);
+}
+
+.Header-logo {
+   left : 0px;
+
+   align-self  : center;
+   margin-left : 1.5em;
+}
+   .Header-logo h1 {
+      font-size : 5em;
+   }
+
+.Header-actions {
+   right  : 0px;
+   margin : 0.5em 0.5em 0 0;
+
+   font-size   : 1.25em;
+   font-weight : 600;
+}
+   .Header-actions {
+      cursor : pointer;
+   }
