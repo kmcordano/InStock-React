@@ -1,10 +1,12 @@
+import PropTypes from 'prop-types';
+
 import '../css/Header.css';
 
-const Header = () => {
+const Header = ({title}) => {
    return (
       <div className="Header">
          <div className="Header-logo">
-            <h1>InStock</h1>
+            <h1>{title}</h1>
          </div>
          <div className="Header-actions">
             <a>Settings</a>
@@ -14,5 +16,9 @@ const Header = () => {
       </div>
    );
 };
+
+Header.propTypes ={
+   title: PropTypes.string
+}
 
 export default Header;
