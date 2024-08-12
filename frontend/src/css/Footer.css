@@ -1,0 +1,36 @@
+/*
+ * Footer.css
+ * Footer Component Styles
+ */
+
+.Footer, .Footer-user, .Footer-timestamp {
+   position : absolute;
+}
+
+.Footer {
+   background-color : rgb(150,55,55);
+
+   display : flex;
+   height  : 8em;
+
+   left   : 0px;
+   right  : 0px;
+   bottom : 0px;
+}
+   .Footer-user, .Footer-timestamp {
+      font-size : 1.5em;
+   }
+
+.Footer-user {
+   left   : 0px;
+   bottom : 0px;
+
+   margin : 0 0 0.5em 0.5em;
+}
+
+.Footer-timestamp {
+   right  : 0px;
+   bottom : 0px;
+
+   margin : 0 0.5em 0.5em 0;
+}
