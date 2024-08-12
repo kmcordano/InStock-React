@@ -1,0 +1,9 @@
+/*
+ * Main.css
+ * Main Component Styles
+ */
+
+.Main {
+   position : relative;
+   flex-grow : 1;
+}

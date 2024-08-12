@@ -3,11 +3,9 @@
  * Header component styles
  */
 
-.Header, .Header-logo, .Header-actions {
-   position : absolute;
-}
+.Header {
+   position : relative;
 
-.Header{
    top   : 0px;
    left  : 0px;
    right : 0px;
@@ -17,6 +15,10 @@
    height : 8em;
 
    background-color : rgb(150,55,55);
+}
+
+.Header-logo, .Header-actions {
+   position : absolute;
 }
 
 .Header-logo {
