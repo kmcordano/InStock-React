@@ -17,3 +17,7 @@
    .KeypadButton:hover {
       background-color : #eee;
    }
+
+   .KeypadButton:active {
+      scale : 0.95;
+   }
