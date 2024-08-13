@@ -13,6 +13,7 @@ const Keypad = ({ employeeNumber, setEmployeeNumber, submitInput}) => {
             break;
          case 'enter':
             submitInput();
+            setEmployeeNumber('');
             break;
          default:
             setEmployeeNumber(employeeNumber + event.target.textContent);
