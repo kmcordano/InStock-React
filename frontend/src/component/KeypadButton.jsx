@@ -2,14 +2,15 @@ import PropTypes from 'prop-types';
 
 import '../css/KeypadButton.css';
 
-const KeypadButton = ({text}) => {
+const KeypadButton = ({text, clickFunction}) => {
    return (
-      <div className="KeypadButton">{text}</div>
+      <div className="KeypadButton" onClick={clickFunction}>{text}</div>
    );
 };
 
 KeypadButton.propTypes = {
-   text : PropTypes.string
-}
+   clickFunction : PropTypes.func,
+   text          : PropTypes.string
+};
 
 export default KeypadButton;
