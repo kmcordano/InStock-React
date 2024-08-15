@@ -5,8 +5,20 @@ import Keypad from './Keypad';
 import '../css/LoginPage.css';
 
 const LoginPage = () => {
-   const submitInput = () => { console.log(`submitting input ${employeeNumber}`); }
    const [employeeNumber, setEmployeeNumber] = useState('');
+   const submitInput = async () => { 
+      const options = {
+         method  : 'POST',
+         headers : new Headers({'content-type': 'application/json'}),
+         body    : JSON.stringify({
+            'employeeNumber': `${employeeNumber}`
+         })
+      };
+      fetch('http://127.0.0.1:8080/login', options)
+         .then(response => response.json())
+         .then(response => console.log(response))
+         .catch(error => console.log(error));
+   }
    
    return (
       <div className="LoginPage">
