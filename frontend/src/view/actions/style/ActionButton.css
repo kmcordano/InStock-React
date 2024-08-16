@@ -1,0 +1,26 @@
+/*
+ * ActionButton.css
+ * ActionButton Component Styles
+ */
+
+.action-button {
+   width  : 7.5em;
+   height : 7.5em;
+   cursor : pointer;
+
+   align-content : center;
+   text-align    : center;
+
+   border : 2px solid #888;
+
+   background-color : rgb(211,211,211);
+
+   font-size : 2em;
+}
+   .action-button:hover {
+      background-color : #eee;
+   }
+
+   .action-button:active {
+      scale : 0.95;
+   }

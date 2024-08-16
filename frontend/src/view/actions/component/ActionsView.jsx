@@ -2,9 +2,9 @@ import '../style/ActionsView.css';
 
 import ActionButton from './ActionButton';
 
-const ActionsPage = () => {
+const ActionsView = () => {
    return(
-      <div className="ActionPage">
+      <div className="ActionsView">
          <div className="actions-button-container">
             <ActionButton text="Button1"/>
          </div>
@@ -12,4 +12,4 @@ const ActionsPage = () => {
    );
 };
 
-export default ActionsPage;
+export default ActionsView;
