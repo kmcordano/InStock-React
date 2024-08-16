@@ -15,8 +15,8 @@ const Main = ({ user, setUser }) => {
                   element={user ? <Navigate to="/actions" /> : <Navigate to="/login" />} 
                />
                <Route 
-                 path="/login" 
-                 element={user ? <Navigate to="/actions"/> : <LoginPage setUser={setUser}/>} 
+                  path="/login" 
+                  element={user ? <Navigate to="/actions"/> : <LoginPage setUser={setUser}/>} 
                />
                <Route
                   path="/actions"
