@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import LoginPage from '../../login/component/LoginPage';
+import ActionsView from '../../actions/component/ActionsView';
 
 import '../style/Main.css';
 
@@ -20,7 +21,7 @@ const Main = ({ user, setUser }) => {
                />
                <Route
                   path="/actions"
-                  element={user ? <h1>actions</h1> : <Navigate to="/login" />}
+                  element={<ActionsView />}/*{user ? <ActionsView /> : <Navigate to="/login" />}*/
                />
             </Routes>
          </div>
