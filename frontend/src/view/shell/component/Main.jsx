@@ -12,7 +12,7 @@ const Main = ({ user, setUser }) => {
             <Routes>
                <Route 
                   path="/" 
-                  element={<Navigate to="/login" />} 
+                  element={user ? <Navigate to="/actions" /> : <Navigate to="/login" />} 
                />
                <Route 
                  path="/login" 
@@ -20,7 +20,7 @@ const Main = ({ user, setUser }) => {
                />
                <Route
                   path="/actions"
-                  element={<h1>actions</h1>}
+                  element={user ? <h1>actions</h1> : <Navigate to="/login" />}
                />
             </Routes>
          </div>
