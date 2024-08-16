@@ -1,11 +1,13 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import Keypad from './Keypad';
 
-import '../css/LoginPage.css';
+import '../style/LoginPage.css';
 
-const LoginPage = () => {
+const LoginPage = ({ setUser }) => {
    const [employeeNumber, setEmployeeNumber] = useState('');
+   
    const submitInput = async () => { 
       const options = {
          method  : 'POST',
@@ -16,9 +18,16 @@ const LoginPage = () => {
       };
       fetch('http://127.0.0.1:8080/login', options)
          .then(response => response.json())
-         .then(response => console.log(response))
+         .then(response => validateResponse(response))
          .catch(error => console.log(error));
    }
+
+   const validateResponse = (response) => {
+      console.log(response);
+      if(response.employeeNumber) {
+         setUser(response);
+      }
+   };
    
    return (
       <div className="LoginPage">
@@ -42,6 +51,10 @@ const LoginPage = () => {
          </div>
       </div>
    );
+};
+
+LoginPage.propTypes = {
+   setUser : PropTypes.func
 };
 
 export default LoginPage;

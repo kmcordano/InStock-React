@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import KeypadButton from './KeypadButton';
 import KeypadInput from './KeypadInput';
 
-import '../css/Keypad.css';
+import '../style/Keypad.css';
 
 const Keypad = ({ employeeNumber, setEmployeeNumber, submitInput}) => {
    const handleClick = (event) => {

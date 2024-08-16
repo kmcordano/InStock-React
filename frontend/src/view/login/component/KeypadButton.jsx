@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import '../css/KeypadButton.css';
+import '../style/KeypadButton.css';
 
 const KeypadButton = ({text, clickFunction}) => {
    return (

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import '../css/Header.css';
+import '../style/Header.css';
 
 const Header = ({title}) => {
    return (

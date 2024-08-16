@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import '../css/KeypadInput.css';
+import '../style/KeypadInput.css';
 
 const KeypadInput = ({ value }) => {
    return (
