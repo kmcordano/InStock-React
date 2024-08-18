@@ -23,7 +23,6 @@ const LoginPage = ({ setUser }) => {
    }
 
    const validateResponse = (response) => {
-      console.log(response);
       if(response.employeeNumber) {
          setUser(response);
       }
