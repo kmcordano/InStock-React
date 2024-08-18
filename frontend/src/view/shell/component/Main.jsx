@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import LoginPage from '../../login/component/LoginPage';
 import ActionsView from '../../actions/component/ActionsView';
+import TransactionView from '../../transaction/component/TransactionView';
 
 import '../style/Main.css';
 
@@ -22,6 +23,10 @@ const Main = ({ user, setUser }) => {
                <Route
                   path="/actions"
                   element={<ActionsView />}/*{user ? <ActionsView /> : <Navigate to="/login" />}*/
+               />
+               <Route 
+                  path="/transaction"
+                  element={user ? <TransactionView /> : <Navigate to="/login" />}
                />
             </Routes>
          </div>

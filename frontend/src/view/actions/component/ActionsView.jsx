@@ -6,7 +6,7 @@ const ActionsView = () => {
    return(
       <div className="ActionsView">
          <div className="actions-button-container">
-            <ActionButton text="" navigateTo="/"/>
+            <ActionButton text="New Transaction" navigateTo="/transaction"/>
             <ActionButton text="" />
             <ActionButton text="" />
             <ActionButton text="" />
