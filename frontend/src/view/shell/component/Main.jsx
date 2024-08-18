@@ -22,7 +22,7 @@ const Main = ({ user, setUser }) => {
                />
                <Route
                   path="/actions"
-                  element={<ActionsView />}/*{user ? <ActionsView /> : <Navigate to="/login" />}*/
+                  element={user ? <ActionsView /> : <Navigate to="/login" />}
                />
                <Route 
                   path="/transaction"
