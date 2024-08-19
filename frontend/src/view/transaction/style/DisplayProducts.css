@@ -1,0 +1,11 @@
+/*
+ * DisplayProducts.css
+ * DisplayProducts Component Styles
+ */
+
+.transaction-display-products {
+   display : flex;
+   flex-direction : column;
+
+   flex-grow : 1;
+}

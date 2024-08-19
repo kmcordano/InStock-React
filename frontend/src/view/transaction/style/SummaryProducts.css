@@ -1,0 +1,10 @@
+/*
+ * SummaryProducts.css
+ * SummaryProducts Component Styles
+ */
+
+.transaction-summary-products {
+   width : 100%;
+   background-color : #fff;
+   flex-grow : 1;
+}

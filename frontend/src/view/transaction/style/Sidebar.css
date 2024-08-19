@@ -1,0 +1,9 @@
+/*
+ * Sidebar.css
+ * Sidebar Component Styles
+ */
+
+.sidebar {
+   height : 100%;
+   background-color : rgb(192,135,135);
+}

@@ -54,4 +54,13 @@ strong {
 /* End spa namespace selectors */
 
 /* Begin utility selectors */
+.button {
+   cursor : pointer;
+
+   align-content : center;
+   text-align : center;
+
+   border : 2px solid #888;
+   background-color: rgb(211,211,211);
+}
 /* End utility selectors */

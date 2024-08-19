@@ -1,0 +1,12 @@
+/*
+ * DisplayProductsList.csss
+ * DisplayProductsList Component Styles
+ */
+
+.transaction-display-products-list {
+   background-color : #fff;
+
+   width : 100%;
+
+   flex-grow : 1;
+}

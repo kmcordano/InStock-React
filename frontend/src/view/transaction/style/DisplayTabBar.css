@@ -1,0 +1,13 @@
+/*
+ * DisplayTabBar.css
+ * DisplayTabBar Component Styles
+ */
+
+.transaction-display-tab-bar {
+   display : flex;
+   gap : 0.5em;
+}
+
+.active {
+   background-color : #fff !important;
+}

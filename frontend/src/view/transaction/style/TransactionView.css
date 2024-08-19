@@ -1,0 +1,42 @@
+/*
+ * TransactionView.css
+ * TransactionView Component Styles
+ */
+
+.transaction-view {
+   width  : 100%;
+   height : 100%;
+
+   display : flex;
+}
+
+.transaction-div {
+   margin : 1.5em;
+   padding : 0.5em;
+   background-color : rgb(192,135,135);
+}
+
+.transaction-display {
+   display : flex;
+   gap : 0.5em;
+   flex-grow : 1;
+}
+
+.transaction-summary {
+   display : flex;
+   flex-direction : column;
+   gap : 0.5em;
+}
+
+.transaction-summary-header {
+   display : flex;
+   height : 4em;
+
+   align-items : center;
+
+   gap : 0.5em;
+}
+
+.transaction-submit-button {
+   padding : 0.5em 2em;
+}
