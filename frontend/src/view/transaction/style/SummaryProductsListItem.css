@@ -1,0 +1,39 @@
+/*
+ * SummaryProductsListItem.css
+ * SummaryProductsListItem Component Styles
+ */
+
+.transaction-summary-products-list-item {
+   height : 3em;
+   width  : 100%;
+
+   display : flex;
+   gap : 0.5em;
+
+   align-items : center;
+   padding     : 0.5em;
+}
+   .transaction-summary-products-list-item:nth-child(even) {
+      background-color : rgb(240,240,240);
+   }
+
+   .transaction-summary-products-list-item:hover .transaction-summary-products-list-item-button, 
+   .transaction-summary-products-list-item:hover .transaction-summary-products-list-item-delete-button {
+      visibility : visible;
+   }
+
+.transaction-summary-products-list-item-button {
+   height : 2em;
+   width  : 2em;
+
+   visibility : hidden;
+}
+
+.transaction-summary-products-list-item-delete-button {
+   height : 2em;
+   width : 4em;
+
+   margin-left : auto;
+
+   visibility : hidden;
+}

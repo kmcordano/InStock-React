@@ -2,7 +2,7 @@
 
 import Sidebar from './Sidebar';
 import DisplayProducts from './DisplayProducts';
-import SummaryProducts from './SummaryProducts';
+import SummaryProductsList from './SummaryProductsList';
 
 import '../style/TransactionView.css';
 
@@ -51,7 +51,7 @@ const TransactionView = () => {
                <h2>Transaction Summary</h2>
                <div className="transaction-submit-button button">Submit</div>
             </div>
-            <SummaryProducts />
+            <SummaryProductsList />
          </div>
       </div>
    );
