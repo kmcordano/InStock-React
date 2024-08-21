@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import '../style/DisplayProductListItem.css';
 
-const DisplayProductsListItem = ({ quantity, name }) => {
+const DisplayProductsListItem = ({ id, quantity, name }) => {
    return (
       <div className="transaction-display-products-list-item">
          <div className="transaction-display-products-list-item-button button">+</div>
@@ -13,7 +13,8 @@ const DisplayProductsListItem = ({ quantity, name }) => {
 };
 
 DisplayProductsListItem.propTypes = {
-   quantity : PropTypes.string,
+   id : PropTypes.number,
+   quantity : PropTypes.number,
    name : PropTypes.string
 }
 
