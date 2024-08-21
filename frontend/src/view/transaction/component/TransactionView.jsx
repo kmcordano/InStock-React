@@ -35,7 +35,15 @@ const TransactionView = () => {
          text : 'Category 3',
          path : '/'
       }
-   ]
+   ];
+
+   const summaryProductList = [
+      {
+         id : 1,
+         name : 'Product',
+         quantity : 0
+      }
+   ];
 
    return (
       <div className="transaction-view">
@@ -51,7 +59,7 @@ const TransactionView = () => {
                <h2>Transaction Summary</h2>
                <div className="transaction-submit-button button">Submit</div>
             </div>
-            <SummaryProductsList />
+            <SummaryProductsList listItems={summaryProductList} />
          </div>
       </div>
    );

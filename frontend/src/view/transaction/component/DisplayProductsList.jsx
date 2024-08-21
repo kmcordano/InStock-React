@@ -25,7 +25,7 @@ const DisplayProductsList = () => {
 
    return (
       <div className="transaction-display-products-list">
-         { products.map((product) => { return <DisplayProductsListItem key={product.id} name={product.name} quantity={product.quantity} /> }) }
+         { products.map((product) => { return <DisplayProductsListItem key={product.id} item={product} /> }) }
       </div>
    );
 };
