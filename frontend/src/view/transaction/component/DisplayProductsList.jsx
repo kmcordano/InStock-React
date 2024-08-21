@@ -1,10 +1,10 @@
-
+import PropTypes from 'prop-types';
 
 import DisplayProductsListItem from './DisplayProductsListItem';
 
 import '../style/DisplayProductsList.css';
 
-const DisplayProductsList = () => {
+const DisplayProductsList = ({ productOnClick }) => {
    const products = [
       {
          id : 1,
@@ -25,9 +25,13 @@ const DisplayProductsList = () => {
 
    return (
       <div className="transaction-display-products-list">
-         { products.map((product) => { return <DisplayProductsListItem key={product.id} item={product} /> }) }
+         { products.map((product) => { return <DisplayProductsListItem key={product.id} item={product} productOnClick={productOnClick}/> }) }
       </div>
    );
+};
+
+DisplayProductsList.propTypes = {
+   productOnClick : PropTypes.func
 };
 
 export default DisplayProductsList;

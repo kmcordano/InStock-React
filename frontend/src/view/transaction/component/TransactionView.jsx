@@ -1,4 +1,4 @@
-
+import { useState } from 'react';
 
 import Sidebar from './Sidebar';
 import DisplayProducts from './DisplayProducts';
@@ -7,6 +7,8 @@ import SummaryProductsList from './SummaryProductsList';
 import '../style/TransactionView.css';
 
 const TransactionView = () => {
+   const [summaryProductList, setSummaryProductList] = useState([]);
+
    const sidebarActionButtons = [
       {
          text : 'Action 1',
@@ -37,13 +39,13 @@ const TransactionView = () => {
       }
    ];
 
-   const summaryProductList = [
-      {
-         id : 1,
-         name : 'Product',
-         quantity : 0
+   const addProductToSummaryList = (product) => {
+      if(summaryProductList.some(p => p.id === product.id )) {
+         return;
       }
-   ];
+
+      setSummaryProductList([...summaryProductList, product]);
+   };
 
    return (
       <div className="transaction-view">
@@ -52,7 +54,7 @@ const TransactionView = () => {
          </div>
          <div className="transaction-div transaction-display">
             <Sidebar buttons={displaySidebarButtons} />
-            <DisplayProducts />
+            <DisplayProducts productOnClick={addProductToSummaryList} />
          </div>
          <div className="transaction-div transaction-summary">
             <div className="transaction-summary-header">
