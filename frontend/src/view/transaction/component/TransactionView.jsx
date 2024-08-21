@@ -40,11 +40,15 @@ const TransactionView = () => {
    ];
 
    const addProductToSummaryList = (product) => {
-      if(summaryProductList.some(p => p.id === product.id )) {
+      if(summaryProductList.some((p) => { return p.id === product.id })) {
          return;
       }
 
       setSummaryProductList([...summaryProductList, product]);
+   };
+
+   const removeProductFromSummaryList = (product) => {
+      setSummaryProductList(summaryProductList.filter((p) => { return p.id !== product.id }));
    };
 
    return (
@@ -61,7 +65,7 @@ const TransactionView = () => {
                <h2>Transaction Summary</h2>
                <div className="transaction-submit-button button">Submit</div>
             </div>
-            <SummaryProductsList listItems={summaryProductList} />
+            <SummaryProductsList listItems={summaryProductList} productOnDelete={removeProductFromSummaryList} />
          </div>
       </div>
    );
